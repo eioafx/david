@@ -1,0 +1,119 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>David Kennedy Art</title>
+        <meta name="description" content="content">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/david.css">
+    </head>
+
+    <body>
+        
+        <nav class="port-nav navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../media/Wilmur2_Animation_wbg.gif" width="30" height="30" class="d-inline-block align-top" alt="">
+    
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="../index.html"><b>HOME</b></a>
+                    <a class="nav-item nav-link" href="about.html"><b>ABOUT</b></a>
+                    <a class="nav-item nav-link" href="animation.html"><b>ANIMATION</b></a>
+                    <a class="nav-item nav-link" href="renders.html"><b>RENDERS</b></a>
+                </div>
+            </div>
+        </nav>
+
+        <div id="portfolio">
+
+        
+        <div class="row justify-content-around">
+            <div class="column col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+                <video autoplay="autoplay" muted="muted" loop="loop" onclick="openModal();currentSlide(1)" class="hover-shadow sizing" width="100%" height="100%">
+                    <source src="../media/space_animation.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="column col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+                <video autoplay="autoplay" muted="muted" loop="loop" onclick="openModal();currentSlide(2)" class="hover-shadow sizing" width="100%" height="100%">
+                    <source src="../media/roboman_Clean_1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="column col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+                <video autoplay="autoplay" muted="muted" loop="loop" onclick="openModal();currentSlide(3)" class="hover-shadow sizing" width="100%" height="100%">
+                    <source src="../media/speedcar.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="column col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+                <video autoplay="autoplay" muted="muted" loop="loop" onclick="openModal();currentSlide(4)" class="hover-shadow sizing" width="100%" height="100%">
+                    <source src="../media/Thelma_and_Wilmur.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+          
+          <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" width="100%" height="100%">
+                        <source src="../media/space_animation.mp4" type="video/mp4">
+                    </video>
+                    <p><b>SPACE</b></p>
+                </div>
+          
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" width="100%" height="100%">
+                        <source src="../media/roboman_Clean_1.mp4" type="video/mp4">
+                    </video>
+                    <p><b>ROBOMAN</b></p>
+                </div>
+          
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" width="100%" height="100%">
+                        <source src="../media/speedcar.mp4" type="video/mp4">
+                    </video>
+                    <p><b>SPEEDY</b></p>
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" width="100%" height="100%">
+                        <source src="../media/Thelma_and_Wilmur.mp4" type="video/mp4">
+                    </video>
+                </div>
+            
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            
+                </div>
+            </div>
+        </div>
+        
+
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="../scripts/david.js"></script>
+    </body>
+</html>
