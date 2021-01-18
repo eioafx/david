@@ -115,6 +115,11 @@ header {
     width: 400px;
   } */
 
+  .description {
+    padding: 25px;
+    color: white;
+  }
+
   .port-nav {
     z-index: 0;
     margin-left: 0px;
@@ -189,6 +194,7 @@ header {
   /* Hide the slides by default */
   .mySlides {
     display: none;
+    background-color: black;
   }
   
   /* Next & previous buttons */
